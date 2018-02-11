@@ -25,7 +25,7 @@ class JsonFormatterTests {
   @Test
   @DisplayName("Compact test")
   void compactTest() {
-    assertEquals("{\"arr\":[{\"str\":\"str\",\"bool\":false,\"str2\":\"str2\"}],\"obj\":{\"str\":\"str\",\"bool\":false,\"str2\":\"str2\"},\"int\":50}", root.toString());
+    assertEquals("X{\"arr\":[{\"str\":\"str\",\"bool\":false,\"str2\":\"str2\"}],\"obj\":{\"str\":\"str\",\"bool\":false,\"str2\":\"str2\"},\"int\":50}", root.toString());
     assertEquals(root.toString(),root.toString(4).replaceAll("\\s+", ""));
   }
 
